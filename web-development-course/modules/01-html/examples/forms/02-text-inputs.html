@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Input Types</title>
+</head>
+<body>
+    <main>
+        <h1>Text Input Types</h1>
+        
+        <form action="/submit" method="POST" novalidate>
+            <!-- Basic text input -->
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <!-- type="text": basic single-line text input -->
+                <!-- required: makes the field mandatory -->
+                <!-- pattern: defines a regex pattern for validation -->
+                <input 
+                    type="text" 
+                    id="name" 
+                    name="name" 
+                >
+            </div>
+
+            <!-- Email input -->
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <!-- type="email": provides email-specific validation and mobile keyboard -->
+                <input 
+                    type="email" 
+                    id="email" 
+                    name="email" 
+                    required
+                >
+            </div>
+
+            <!-- Password input -->
+            <div class="form-group">
+                <label for="password">Password</label>
+                <!-- type="password": hides the input characters -->
+                <input 
+                    type="password" 
+                    id="password" 
+                    name="password" 
+                    required
+                >
+            </div>
+
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+</body>
+</html> 

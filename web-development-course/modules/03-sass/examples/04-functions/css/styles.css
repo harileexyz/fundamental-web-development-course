@@ -1,0 +1,72 @@
+.color-box {
+  padding: 2rem;
+  margin: 1rem 0;
+  text-align: center;
+  color: white;
+}
+.color-box.base {
+  background-color: #3498db;
+}
+.color-box.lighter {
+  background-color: rgb(138.6359832636, 195.9581589958, 234.3640167364);
+}
+.color-box.darker {
+  background-color: rgb(25.4560669456, 96.1673640167, 143.5439330544);
+}
+.color-box.complement {
+  background-color: #db7734;
+}
+
+.grid {
+  display: flex;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.col-3 {
+  width: 33.3333333333%;
+  padding: 1rem;
+  background-color: #3498db;
+  text-align: center;
+  color: white;
+}
+
+.col-4 {
+  width: 25%;
+  padding: 1rem;
+  background-color: rgb(95.3179916318, 173.9790794979, 226.6820083682);
+  text-align: center;
+  color: white;
+}
+
+.col-5 {
+  width: 20%;
+  padding: 1rem;
+  background-color: rgb(138.6359832636, 195.9581589958, 234.3640167364);
+  text-align: center;
+  color: white;
+}
+
+.spacing-example {
+  background-color: #3498db;
+  color: white;
+  margin: 1rem 0;
+  text-align: center;
+}
+.spacing-example.small {
+  padding: 1rem;
+}
+.spacing-example.medium {
+  padding: 2rem;
+}
+.spacing-example.large {
+  padding: 3rem;
+}
+
+.container {
+  max-width: 75rem;
+  margin: 0 auto;
+  padding: 1.25rem;
+}
+
+/*# sourceMappingURL=styles.css.map */

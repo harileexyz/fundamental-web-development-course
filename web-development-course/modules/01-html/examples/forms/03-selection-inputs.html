@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selection Inputs</title>
+</head>
+<body>
+    <main>
+        <h1>Selection Inputs</h1>
+        
+        <form action="/submit" method="POST">
+            <!-- Dropdown select menu -->
+            <div class="form-group">
+                <label for="subject">Subject</label>
+                <!-- select: creates a dropdown menu -->
+                <select id="subject" name="subject" required>
+                    <!-- option with empty value for placeholder -->
+                    <option value="">Select a subject</option>
+                    <option value="general">General Inquiry</option>
+                    <option value="support">Technical Support</option>
+                    <option value="feedback">Feedback</option>
+                </select>
+            </div>
+
+            <!-- Radio buttons -->
+            <div class="form-group">
+                <fieldset>
+                    <!-- legend: provides a label for the fieldset -->
+                    <legend>Preferred Contact Method</legend>
+                    <!-- Radio buttons with same 'name' create a group -->
+                    <div>
+                        <input type="radio" id="contact-email" name="contact" value="email">
+                        <label for="contact-email">Email</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="contact-phone" name="contact" value="phone">
+                        <label for="contact-phone">Phone</label>
+                    </div>
+                </fieldset>
+            </div>
+
+            <!-- Checkbox -->
+            <div class="form-group">
+                <!-- Checkbox for yes/no options -->
+                <input 
+                    type="checkbox" 
+                    id="newsletter" 
+                    name="newsletter"
+                >
+                <label for="newsletter">Subscribe to newsletter</label>
+            </div>
+
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+</body>
+</html> 

@@ -1,0 +1,53 @@
+/* Grid Layout Examples */
+
+/* Basic Grid Container */
+.grid-container {
+    display: grid;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Grid Template Columns */
+.grid-columns {
+    grid-template-columns: repeat(3, 1fr); /* Three equal columns */
+}
+
+/* Grid Template Areas */
+.grid-layout {
+    display: grid;
+    grid-template-areas:
+        "header header header"
+        "sidebar main main"
+        "footer footer footer";
+    gap: 20px;
+}
+
+.header { grid-area: header; }
+.sidebar { grid-area: sidebar; }
+.main { grid-area: main; }
+.footer { grid-area: footer; }
+
+/* Grid Items */
+.grid-item {
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+
+/* Auto-fit Grid */
+.auto-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+/* Responsive Grid */
+@media (max-width: 768px) {
+    .grid-layout {
+        grid-template-areas:
+            "header"
+            "main"
+            "sidebar"
+            "footer";
+    }
+} 

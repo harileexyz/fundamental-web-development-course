@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Form Structure</title>
+</head>
+<body>
+    <main>
+        <h1>Basic Form Example</h1>
+        
+        <!-- The form element is the container for all form controls -->
+        <!-- action: specifies where the form data should be sent -->
+        <!-- method: specifies how the data should be sent (GET or POST) -->
+        <!-- novalidate: turns off browser's automatic validation -->
+        <form action="/submit" method="POST">
+            <!-- Basic input field with label -->
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username">
+            </div>
+
+            <!-- Simple submit button -->
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+</body>
+</html> 

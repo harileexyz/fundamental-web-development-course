@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Positioning</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="fixed-header">
+        <h1>Fixed Header</h1>
+    </header>
+
+    <nav class="sticky-nav">
+        <ul>
+            <li><a href="#section1">Section 1</a></li>
+            <li><a href="#section2">Section 2</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="relative">
+            <p>This is relatively positioned</p>
+        </div>
+
+        <div class="container">
+            <div class="absolute">
+                <p>This is absolutely positioned</p>
+            </div>
+            <p>Main content</p>
+        </div>
+
+        <!-- Modal example -->
+        <div class="modal-overlay">
+            <div class="modal">
+                <h2>Modal Content</h2>
+                <p>This is a modal example</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 

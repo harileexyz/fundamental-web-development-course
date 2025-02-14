@@ -1,0 +1,91 @@
+/* Responsive Design Examples */
+
+/* Mobile First Base Styles */
+.container {
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+/* Responsive Typography */
+html {
+    font-size: 16px;
+}
+
+h1 {
+    font-size: 1.75rem; /* 28px */
+}
+
+/* Responsive Images */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Media Queries */
+/* Tablet (768px and up) */
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+
+    h1 {
+        font-size: 2rem; /* 32px */
+    }
+}
+
+/* Desktop (992px and up) */
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+
+    h1 {
+        font-size: 2.5rem; /* 40px */
+    }
+}
+
+/* Large Desktop (1200px and up) */
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+/* Responsive Navigation */
+.nav-toggle {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .nav-toggle {
+        display: block;
+    }
+
+    .nav-menu {
+        display: none;
+    }
+
+    .nav-menu.active {
+        display: block;
+    }
+}
+
+/* Responsive Grid */
+.responsive-grid {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr;
+}
+
+@media (min-width: 768px) {
+    .responsive-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 992px) {
+    .responsive-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+} 

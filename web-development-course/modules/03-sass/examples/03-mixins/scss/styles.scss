@@ -1,0 +1,87 @@
+// Variables
+$primary-color: #3498db;
+$secondary-color: #2ecc71;
+$danger-color: #e74c3c;
+
+// Button Mixins
+@mixin button-base {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+@mixin button-variant($bg-color, $text-color: white) {
+    @include button-base;
+    background-color: $bg-color;
+    color: $text-color;
+
+    &:hover {
+        background-color: darken($bg-color, 10%);
+    }
+}
+
+// Flexbox Mixins
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+// Card Mixins
+@mixin card-base {
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    margin: 1rem 0;
+}
+
+@mixin card-hover {
+    @include card-base;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+}
+
+// Applying Mixins
+.btn-primary {
+    @include button-variant($primary-color);
+}
+
+.btn-secondary {
+    @include button-variant($secondary-color);
+}
+
+.btn-danger {
+    @include button-variant($danger-color);
+}
+
+.card {
+    @include card-base;
+}
+
+.card-hover {
+    @include card-hover;
+}
+
+.flex-container {
+    @include flex-center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.flex-item {
+    @include card-base;
+    min-width: 200px;
+} 
