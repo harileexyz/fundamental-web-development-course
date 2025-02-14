@@ -1,0 +1,26 @@
+.site-footer {
+  background: $primary-color;
+  color: white;
+  padding: 2rem 0;
+  text-align: center;
+  
+  p {
+    margin-bottom: 1rem;
+  }
+  
+  .social-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    li {
+      a {
+        display: inline-block;
+        img {
+          width: 24px;
+          height: 24px;
+        }
+      }
+    }
+  }
+} 

@@ -1,0 +1,26 @@
+@use "sass:color";
+
+// Container mixin for layout
+@mixin container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 $container-padding;
+}
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// Responsive grid mixin
+@mixin responsive-grid($columns: 3, $gap: 1rem) {
+  display: grid;
+  gap: $gap;
+  grid-template-columns: repeat(auto-fit, minmax(calc(100% / #{$columns}), 1fr));
+}
+
+@mixin dark-background {
+  background: color.darken($primary-color, 10%);
+} 

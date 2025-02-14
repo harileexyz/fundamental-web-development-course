@@ -1,0 +1,27 @@
+// Colors
+$primary-color: #2563eb;
+$secondary-color: #3b82f6;
+$accent-color: #60a5fa;
+$text-primary: #1f2937;
+$text-secondary: #4b5563;
+$background: #ffffff;
+$background-alt: #f3f4f6;
+
+// Typography
+$font-primary: 'Inter', sans-serif;
+$font-secondary: 'Poppins', sans-serif;
+$font-size-base: 1rem;
+$line-height-base: 1.5;
+
+// Breakpoints
+$breakpoints: (
+  'sm': 640px,
+  'md': 768px,
+  'lg': 1024px,
+  'xl': 1280px
+);
+
+// Spacing
+$spacing-unit: 1rem;
+$container-padding: $spacing-unit;
+$section-spacing: $spacing-unit * 4; 

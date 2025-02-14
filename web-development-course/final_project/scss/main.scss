@@ -1,0 +1,17 @@
+// Import Partial Files
+@import 'abstracts/variables';
+@import 'abstracts/mixins';
+@import 'base/reset';
+@import 'base/typography';
+@import 'components/header';
+@import 'components/footer';
+@import 'components/portfolio';
+@import 'pages/home';
+
+// Global styles
+body {
+  margin: 0;
+  font-family: $font-body;
+  color: $text-color;
+  background-color: $bg-color;
+} 

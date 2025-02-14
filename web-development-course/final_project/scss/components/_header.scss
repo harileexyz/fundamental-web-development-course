@@ -1,0 +1,61 @@
+.site-header {
+  background: $primary-color;
+  color: white;
+  padding: 1rem 0;
+
+  .navbar {
+    @include container;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .logo {
+      font-size: 1.5rem;
+      color: white;
+      text-decoration: none;
+    }
+
+    .nav-toggle {
+      background: none;
+      border: none;
+      cursor: pointer;
+      display: none;
+      .hamburger {
+        width: 25px;
+        height: 3px;
+        background: white;
+        position: relative;
+      }
+    }
+
+    .nav-menu {
+      list-style: inside;
+      display: flex;
+      gap: 1rem;
+      li {
+        a {
+          color: white;
+          text-decoration: none;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+
+  // Mobile navigation style
+  @media (max-width: 768px) {
+    .nav-toggle {
+      display: block;
+    }
+    .nav-menu {
+      display: none;
+      flex-direction: column;
+      &.nav-menu_visible {
+        display: flex;
+        margin-top: 1rem;
+      }
+    }
+  }
+} 

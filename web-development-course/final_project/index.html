@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="icon" href="assets/images/favicon.ico">
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <nav class="navbar">
+      <div class="container">
+        <a href="index.html" class="logo">My Portfolio</a>
+        <button class="nav-toggle" aria-label="toggle navigation">
+          <span class="hamburger"></span>
+        </button>
+        <ul class="nav-menu">
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="container">
+      <h1>Welcome to My Portfolio</h1>
+      <p>I'm a passionate web developer specializing in building beautiful, responsive websites.</p>
+      <a href="#portfolio" class="btn btn-primary">View My Work</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <div class="about-content">
+        <div class="about-image">
+          <img src="assets/images/profile.jpg" alt="Profile Picture">
+        </div>
+        <div class="about-text">
+          <p>I am a web developer with strong foundations in HTML, CSS, and SASS. My passion is creating visually appealing, responsive, and accessible websites.</p>
+          <p>I continuously explore new techniques and best practices to deliver high-quality projects.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section id="portfolio" class="portfolio">
+    <div class="container">
+      <h2>My Work</h2>
+      <div class="portfolio-grid">
+        <article class="portfolio-item">
+          <img src="assets/images/project_1.png" alt="Project 1">
+          <div class="portfolio-info">
+            <h3>Project One</h3>
+            <p>A responsive website built with modern web technologies.</p>
+          </div>
+        </article>
+        <article class="portfolio-item">
+          <img src="assets/images/project_2.png" alt="Project 2">
+          <div class="portfolio-info">
+            <h3>Project Two</h3>
+            <p>A creative portfolio of design and development projects.</p>
+          </div>
+        </article>
+        <article class="portfolio-item">
+          <img src="assets/images/project_3.svg" alt="Project 3">
+          <div class="portfolio-info">
+            <h3>Project Three</h3>
+            <p>An innovative e-commerce platform featuring sleek design.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Get In Touch</h2>
+      <form action="#" method="post" class="contact-form">
+        <div class="form-group">
+          <label for="text">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your Name"  required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Your Email"  required>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-secondary">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2023 My Portfolio. All Rights Reserved.</p>
+      <ul class="social-links">
+        <li><a href="#" target="_blank"><img src="assets/images/facebook.svg" alt="Facebook"></a></li>
+        <li><a href="#" target="_blank"><img src="assets/images/twitter.svg" alt="Twitter"></a></li>
+        <li><a href="#" target="_blank"><img src="assets/images/linkedin.svg" alt="LinkedIn"></a></li>
+        <li><a href="#" target="_blank"><img src="assets/images/github.svg" alt="GitHub"></a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script>
+    // Simple navigation toggle for mobile
+    const navToggle = document.querySelector('.nav-toggle');
+    const navMenu = document.querySelector('.nav-menu');
+
+    navToggle.addEventListener('click', () => {
+      navMenu.classList.toggle('nav-menu_visible');
+    });
+  </script>
+</body>
+</html> 
