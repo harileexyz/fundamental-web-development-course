@@ -1,42 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Positioning</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="index.css">
 </head>
+
 <body>
-    <header class="fixed-header">
-        <h1>Fixed Header</h1>
-    </header>
+    <div>
 
-    <nav class="sticky-nav">
-        <ul>
-            <li><a href="#section1">Section 1</a></li>
-            <li><a href="#section2">Section 2</a></li>
-        </ul>
-    </nav>
+        <header class="fixed">Fixed Header (position: fixed)</header>
 
-    <div class="container">
-        <div class="relative">
-            <p>This is relatively positioned</p>
-        </div>
+        <nav class="sticky">Sticky Nav (position: sticky, top: 60px)</nav>
 
-        <div class="container">
-            <div class="absolute">
-                <p>This is absolutely positioned</p>
+        <section>
+            <h2>Relative Positioning</h2>
+            <div class="relative-box">This box is offset from its normal position</div>
+        </section>
+
+        <section class="absolute-container">
+            <h2>Absolute Positioning</h2>
+            <div class="absolute-box">I'm absolutely positioned</div>
+            <p>This section is the relative container for the absolute box above.</p>
+        </section>
+
+        <section>
+            <h2>Scroll to see sticky in action</h2>
+            <p>Keep scrolling down...</p>
+        </section>
+
+        <section>
+            <h2>Modal Example</h2>
+            <div class="modal-overlay">
+                <div class="modal">
+                    <h3>Modal Window</h3>
+                    <p>This modal is centered with transform and uses z-index layering.</p>
+                </div>
             </div>
-            <p>Main content</p>
-        </div>
+        </section>
 
-        <!-- Modal example -->
-        <div class="modal-overlay">
-            <div class="modal">
-                <h2>Modal Content</h2>
-                <p>This is a modal example</p>
-            </div>
-        </div>
+        <section>
+            <h2>End of Page</h2>
+            <p>You've reached the bottom.</p>
+        </section>
     </div>
+
 </body>
-</html> 
+
+</html>
