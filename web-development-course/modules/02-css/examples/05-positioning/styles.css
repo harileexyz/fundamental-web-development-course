@@ -1,53 +1,72 @@
-/* Positioning Examples */
+body {
+    margin: 0;
+    font-family: sans-serif;
+  }
 
-/* Relative Positioning */
-.relative {
-    position: relative;
-    top: 20px;
-    left: 20px;
-}
-
-/* Absolute Positioning */
-.container {
-    position: relative; /* Container for absolute elements */
-}
-
-.absolute {
-    position: absolute;
-    top: 0;
-    right: 0;
-}
-
-/* Fixed Positioning */
-.fixed-header {
+  /* Fixed Header */
+  header.fixed {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    background: white;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
+    background: #333;
+    color: white;
+    padding: 1rem;
+    z-index: 1000;
+  }
 
-/* Sticky Positioning */
-.sticky-nav {
+  /* Sticky Nav */
+  nav.sticky {
     position: sticky;
-    top: 0;
-    background: white;
-    z-index: 100;
-}
+    top: 60px; /* stuck below header */
+    background: #eee;
+    padding: 1rem;
+    z-index: 999;
+  }
 
-/* Z-index and Stacking Context */
-.modal-overlay {
+  section {
+    padding: 100px 1rem;
+    border-bottom: 1px solid #ccc;
+  }
+
+  .relative-box {
+    position: relative;
+    top: 20px;
+    left: 20px;
+    background: lightblue;
+    padding: 1rem;
+  }
+
+  .absolute-container {
+    position: relative;
+    background: #f0f0f0;
+    margin-top: 2rem;
+    padding: 2rem;
+  }
+
+  .absolute-box {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: coral;
+    color: white;
+    padding: 0.5rem 1rem;
+  }
+
+  .modal-overlay {
     position: fixed;
     inset: 0;
     background: rgba(0,0,0,0.5);
     z-index: 1000;
-}
+  }
 
-.modal {
+  .modal {
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    background: white;
+    padding: 2rem;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.3);
     z-index: 1001;
-} 
+  }
