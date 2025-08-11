@@ -151,9 +151,9 @@ scss/
 ### Importing Files
 
 ~~~scss
-@use 'variables';
-@use 'mixins';
-@use 'functions';
+@use 'variables' as *;
+@use 'mixins' as *;
+@use 'functions' as *;
 ~~~
 
 ## 6. Best Practices
